@@ -3,6 +3,7 @@ package com.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
 import java.util.Properties;
 
 public class DatabaseUtil {
@@ -11,7 +12,7 @@ public class DatabaseUtil {
 
     static {
         try {
-            properties.load(DatabaseUtil.class.getClassLoader().getResourceAsStream("db.properties"));
+            properties.load(DatabaseUtil.class.getClassLoader().getResourceAsStream("application.properties"));
         } catch (Exception e) {
             e.printStackTrace();
         }
