@@ -83,4 +83,13 @@ public class TodoDAO {
         state.executeUpdate();
     }
 
+    public void removeTodo(int id) throws SQLException {
+        String query = "DELETE FROM todos WHERE id = ?";
+
+        PreparedStatement state = connection.prepareStatement(query);
+        state.setInt(1, id);
+
+        state.executeUpdate();
+    }
+
 }

@@ -17,7 +17,8 @@ public class UserService {
         this.userDAO.registerUser(user);
     }
 
-    public void loginUser(String username, String password) throws SQLException {
+    public User loginUser(String username, String password) throws SQLException {
         this.userDAO.loginUser(username, password);
+        return null;
     }
 }

@@ -19,8 +19,14 @@ public class DatabaseUtil {
     }
 
     public static Connection getConnection() throws SQLException {
-        String url = properties.getProperty("db.url");
-//        String user = properties.getProperty("db.username");
-        return DriverManager.getConnection(url);
+        String url = "jdbc:mysql://localhost:3306/TodoAppDB";
+        String user = "root";
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        return DriverManager.getConnection(url, "root", "");
     }
 }

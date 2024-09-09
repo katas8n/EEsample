@@ -29,4 +29,8 @@ public class TodoService {
     public Todo getTodoById(int id) throws SQLException {
         return this.todoDAO.getTodoById(id);
     }
+
+    public void removeTodo(int id) throws SQLException {
+        todoDAO.removeTodo(id);
+    }
 }

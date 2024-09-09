@@ -32,6 +32,6 @@ public class UserDAO {
 
         if(!result.next()) return null;
 //
-        return new User(result.getInt("id") ,result.getString("username"), result.getString("password"));
+        return new User(result.getString("id") ,result.getString("username"), result.getString("password"));
     }
 }

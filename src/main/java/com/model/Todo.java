@@ -15,6 +15,13 @@ public class Todo {
         this.status = status;
     }
 
+    public Todo(int user_id, String title, String description, String status) {
+        this.user_id = user_id;
+        this.title = title;
+        this.description = description;
+        this.status = status;
+    }
+
     public int getId() {
         return id;
     }

@@ -21,9 +21,8 @@
 
             <input type="submit" value="Registration" />
 
-            <p>
-                Have u already have an account ? <a href="/login">Login Page</a>
-            </p>
+         <p>Don't have an account? <a href="/todo-app/page?page=registration">Register Page</a></p>
+
         </form>
     </body>
 </html>
